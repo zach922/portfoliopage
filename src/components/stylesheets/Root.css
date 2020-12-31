@@ -1,0 +1,25 @@
+
+:root {
+    --main-color: #30302f;
+    --secondary-color: #7d7c7b;
+    --text-color: white;
+    --speed: 500ms;
+    --border: 3px solid  #30302f;
+    --border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}

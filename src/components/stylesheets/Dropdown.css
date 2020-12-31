@@ -1,0 +1,29 @@
+@import url('Root.css');
+
+.dropdown {
+    margin-top: 15px;
+    width: 100px;
+    transform: translateX(45%);
+    overflow: hidden;
+    background-color: var(--main-color);
+    border-radius: var(--border-radius);
+    border: var(--border);
+    position: fixed; 
+    z-index: 10; 
+}
+
+#header {
+margin-top: 50px;
+}
+.btn {
+    
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    width: 100px;
+    color: var(--text-color)
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
