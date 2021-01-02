@@ -3,7 +3,7 @@
 .dropdown {
     margin-top: 15px;
     width: 100px;
-    transform: translateX(45%);
+    transform: translateX(30%);
     overflow: hidden;
     background-color: var(--main-color);
     border-radius: var(--border-radius);
@@ -15,14 +15,17 @@
 #header {
 margin-top: 50px;
 }
-.btn {
+.btn.nav-btn {
+    display:flex;
     position: relative;
     align-items: center;
     justify-content: center;
     background-color: var(--main-color);
-    width: 100px;
+    width: 97px;
+    height: 25px;
     color: var(--text-color);
     z-index: 12;
+    padding:0;
 }
 
 li {

@@ -1,6 +1,7 @@
 @import url('Root.css');
 
 .nav-item {
+    color: white;
     background-color: var(--main-color);
     transition: background var(--speed);
     border-radius: var(--border-radius);
@@ -13,5 +14,9 @@
 }
 
 .nav-item:hover {
+    background-color: var(--secondary-color);
+}
+
+a.active > .nav-item {
     background-color: var(--secondary-color);
 }

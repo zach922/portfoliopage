@@ -3,31 +3,40 @@ import Carousel from './components/Carousel';
 import Dropdown from './components/Dropdown';
 import DropdownItem from './components/DropdownItem';
 import EmailForm from './components/EmailForm';
+import Scroll from 'react-scroll';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <Dropdown >
-          <DropdownItem route={"#top"} icon={"HOME"} />
-          <DropdownItem route={"#portfolio"} icon={"PORTFOLIO"} />
-          <DropdownItem route={"#shop"} icon={"SHOP"} />
-          <DropdownItem route={"#contact"} icon={"CONTACT"} />
+          <Scroll.Link activeClass="active" to="top" spy={true} smooth={true} duration={250}>
+            <DropdownItem route={""} icon={"HOME"} />
+          </Scroll.Link>
+          <Scroll.Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={250}>
+            <DropdownItem route={""} icon={"PORTFOLIO"} />
+          </Scroll.Link>
+          <Scroll.Link activeClass="active" to="shop" spy={true} smooth={true} duration={250}>
+            <DropdownItem route={""} icon={"SHOP"} />
+          </Scroll.Link>
+          <Scroll.Link activeClass="active" to="contact" spy={true} smooth={true} duration={250}>
+            <DropdownItem route={""} icon={"CONTACT"} />
+          </Scroll.Link>
         </Dropdown>
       </header>
-      <body>
-        <a id="top">
-            <Carousel />
-          </a>
-          <a id="portfolio">
-            <Carousel />
-          </a>        
-          <a id="shop">
-            <Carousel />
-          </a>        
-          <a id="contact">
-            <EmailForm />
-          </a>
+      <body>        
+        <Scroll.Element name="top">
+          <Carousel />
+        </Scroll.Element>
+        <Scroll.Element name="portfolio">
+          <EmailForm />
+        </Scroll.Element>      
+        <Scroll.Element name="shop">
+          <Carousel />
+        </Scroll.Element>
+        <Scroll.Element name="contact">
+          <EmailForm />
+        </Scroll.Element> 
       </body>
     </div>
   );

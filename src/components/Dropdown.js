@@ -9,7 +9,7 @@ function Dropdown(props) {
 
   return (
     <nav className="dropdown">
-      <Button onClick={() => setOpen(!open)}>
+      <Button className="nav-btn" onClick={() => setOpen(!open)}>
         { !open && <BsList className="nav-icon" />} { open && <BsX className="nav-icon"/>}
       </Button>
       <CSSTransition
