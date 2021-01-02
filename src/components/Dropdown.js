@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './stylesheets/Dropdown.css'
 import { Button } from 'bootstrap-4-react';
 import { BsX, BsList } from 'react-icons/bs';
+import { CSSTransition } from 'react-transition-group';
 
 function Dropdown(props) {
   const [open, setOpen] = useState(false);
@@ -11,9 +12,18 @@ function Dropdown(props) {
       <Button onClick={() => setOpen(!open)}>
         { !open && <BsList className="nav-icon" />} { open && <BsX className="nav-icon"/>}
       </Button>
-      <ul className="dropdown-nav">
-        { open && props.children }
-      </ul>
+      <CSSTransition
+          in ={open}
+          timeout={200}
+          unmountOnExit
+          classNames="slide-open"
+          >
+        <div>
+          <ul className="dropdown-nav">
+            { props.children }
+          </ul>
+        </div>
+      </CSSTransition>
     </nav>
   )
 }

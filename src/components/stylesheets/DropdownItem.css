@@ -10,7 +10,6 @@
     justify-content: center;
     transition: all var(--speed) ease-in-out;
 
-
 }
 
 .nav-item:hover {

@@ -2,6 +2,7 @@ import './App.css';
 import Carousel from './components/Carousel';
 import Dropdown from './components/Dropdown';
 import DropdownItem from './components/DropdownItem';
+import EmailForm from './components/EmailForm';
 
 function App() {
   return (
@@ -13,19 +14,21 @@ function App() {
           <DropdownItem route={"#shop"} icon={"SHOP"} />
           <DropdownItem route={"#contact"} icon={"CONTACT"} />
         </Dropdown>
-        <a href="#" alt="#" id="top">
-          <Carousel />
-        </a>
-        <a href="#" alt="#" id="portfolio">
-          <Carousel />
-        </a>        
-        <a href="#" alt="#" id="shop">
-          <Carousel />
-        </a>        
-        <a href="#" alt="#" id="contact">
-          <Carousel />
-        </a>
       </header>
+      <body>
+        <a id="top">
+            <Carousel />
+          </a>
+          <a id="portfolio">
+            <Carousel />
+          </a>        
+          <a id="shop">
+            <Carousel />
+          </a>        
+          <a id="contact">
+            <EmailForm />
+          </a>
+      </body>
     </div>
   );
 }

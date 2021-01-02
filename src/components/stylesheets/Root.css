@@ -8,6 +8,11 @@
     --border-radius: 8px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
 ul {
     list-style: none;
     margin: 0;

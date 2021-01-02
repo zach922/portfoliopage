@@ -1,0 +1,9 @@
+@import url('Root.css');
+
+.emailForm {
+    height:100%;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    width: 70%;
+}
