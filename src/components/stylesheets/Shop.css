@@ -1,0 +1,18 @@
+@import url('Root.css');
+
+.shop {
+    background-color: var(--secondary-color);
+
+}
+
+.motion-icon {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+}
+
+.icon {
+    height:300px;
+    width: 300px;
+    color: var(--main-color);
+}

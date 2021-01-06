@@ -1,23 +1,44 @@
 @import url('Root.css');
 
 .emailForm {
-    height:100%;
-    justify-content: center;
+    width: 50vw;
+    height: 92vh;
+    display: grid;
     margin: auto;
-    padding: 10px;
-    width: 70%;
+    align-content: center;
 }
 
 .social-media {
     color:var(--main-color);
     height: 40px;
     width: 40px;
-    margin-left: auto;
     float:right;
 }
 
 .btn.btn-primary {
-    color: white;
+    color: var(--text-color);
     background-color: var(--main-color);
     border: 8px;
+}
+
+.sent-successful-enter {
+    opacity: 0;
+    transform: translateY(-110%);
+}
+
+.sent-successful-enter-active {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all 200ms;
+}
+
+.sent-successful-exit {
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.sent-successful-exit-active {
+    opacity: 0;
+    transform: translateY(-110%);
+    transition: all var(--speed);
 }

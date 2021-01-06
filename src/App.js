@@ -3,7 +3,10 @@ import Carousel from './components/Carousel';
 import Dropdown from './components/Dropdown';
 import DropdownItem from './components/DropdownItem';
 import EmailForm from './components/EmailForm';
+import Zach from './components/Zach'
 import Scroll from 'react-scroll';
+import Footer from './components/Footer';
+import Shop from './components/Shop';
 
 function App() {
   return (
@@ -23,21 +26,21 @@ function App() {
             <DropdownItem route={""} icon={"CONTACT"} />
           </Scroll.Link>
         </Dropdown>
-      </header>
-      <body>        
-        <Scroll.Element name="top">
-          <Carousel />
-        </Scroll.Element>
-        <Scroll.Element name="portfolio">
-          <EmailForm />
-        </Scroll.Element>      
-        <Scroll.Element name="shop">
-          <Carousel />
-        </Scroll.Element>
-        <Scroll.Element name="contact">
-          <EmailForm />
-        </Scroll.Element> 
-      </body>
+      </header>        
+      <Scroll.Element name="top">
+        <Zach />
+      </Scroll.Element>
+      <Scroll.Element name="portfolio">
+        <Carousel />
+      </Scroll.Element>      
+      <Scroll.Element name="shop">
+        <Shop />
+      </Scroll.Element>
+      <Scroll.Element name="contact">
+        <EmailForm />
+        <Footer />
+      </Scroll.Element> 
+
     </div>
   );
 }

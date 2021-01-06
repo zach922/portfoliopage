@@ -1,10 +1,10 @@
 
 :root {
-    --main-color: #30302f;
-    --secondary-color: #7d7c7b;
+    --main-color:  #212529;
+    --secondary-color: #4d5155;
     --text-color: white;
     --speed: 500ms;
-    --border: 3px solid  #30302f;
+    --border: 3px solid var(--main-color);
     --border-radius: 8px;
 }
 
@@ -25,6 +25,6 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
 }

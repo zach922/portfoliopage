@@ -15,7 +15,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <Carousel w="100" id="carouselExample">
+      <Carousel w="100" className="carousel-1">
         <Carousel.Inner>
           <Carousel.Item active><BImg display="block" w="100" src={pic} /></Carousel.Item>
           <Carousel.Item><BImg display="block" w="100" src={pic} /></Carousel.Item>

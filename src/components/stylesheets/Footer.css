@@ -1,0 +1,12 @@
+@import url('Root.css');
+
+.navbar {
+    background-color: var(--main-color);
+    height: 8vh;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    color: var(--text-color);
+}
